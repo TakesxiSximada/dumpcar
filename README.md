@@ -3,6 +3,7 @@ Database Snapshotを採取する
 
 # 機能リスト
 
+
 - [ ] db-raw-snapshotが取れる
   - [ ] dbの接続情報を設定できる
     - [ ] ホスト名
@@ -17,6 +18,7 @@ Database Snapshotを採取する
 - [ ] db-dev-snapshotが作成できる
   - [ ] mask対象のテーブルとカラムを指定できる
   - [ ] maskデータの生成方法を指定できる
+- [ ] db-schema-snapshotが取れる
 - [ ] db-snapshotがダウンロードできる
 - [ ] db-snapshotを検索できる
 - [ ] db-snapshotにタグ付けができる
@@ -74,6 +76,12 @@ db-raw-snapshot
 
 db-dev-snapshot
     マスク済みデータベースsnapshot
+
+db-schema-snapshot
+    マスク済みデータベースsnapshot
+
+db-*-full-snapshot
+    データベースミドルウェア上にあるすべてのデータベースの情報をdumpする
 
 マスク
     個人情報などの公開できないデータを偽物のデータに置き換える
