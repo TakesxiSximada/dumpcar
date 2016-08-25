@@ -1,0 +1,67 @@
+// BEM
+//
+// Block -> 塊
+// Element -> 要素
+// Modifier -> 状態 (keyとvalueで表す)
+//
+// BlockとElementの区切りはアンスコ2個（__）
+// BlockまたはElementとModifierの区切りはハイフン2個（--）
+// ModifierのKeyとValueの区切りはアンスコ1個(_)
+// BlockやElementを2つ以上の単語で表す時はハイフン1個(-)
+
+// ex)
+// block
+// block__element
+// block__element--modifier
+
+
+// block--modifier
+// block--modifier__element
+
+body
+  // background-color #c9ced1
+  font-family 'Merriweather', serif;
+  font-weight 300
+  font-size 16px
+
+.TopHeader
+  position fixed
+  top 0
+  width 96%
+  height 6rem
+
+.TopHeader__Box
+  border 1px solid #ddd
+  border-top 0
+  border-left 0
+  border-right 0
+  border-width 2px
+
+.TopHeader__Logo
+
+
+.Navigator
+  ul
+    margin 0
+    padding 0
+
+    li
+      display inline-block
+      padding 0 2rem
+
+    li:nth-child(n+2)
+      border-left .1rem solid #555
+
+.TopHeader__Menu
+  font-size 1.2rem
+
+  ul
+    width 1000px;
+    position absolute
+    margin auto
+
+
+
+.TopHeader__Account
+  font-size 1rem
+  float right
