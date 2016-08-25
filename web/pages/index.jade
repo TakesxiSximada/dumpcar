@@ -6,25 +6,21 @@ head
 
 body
   header.TopHeader.TopHeader__Box
-    //- div#main-logo LOGO
+    div.TopHeader__Box__Banner
+      img(class="TopHeader__Box__Banner__Img", alt="DumpCar" src="http://free-illustrations-ls01.gatag.net/images/lgi01a201405031000.jpg")
+      span DumpCar
 
-    nav.TopHeader__Account.Navigator
-      ul
-        li
-          a(href="#", target="_blank") Try now for free
-        li
-          a(href="#", target="_blank") Sign In
+    div.TopHeader__Box__Account
+      a(class="SignIn__Button" href="#", target="_blank") Sign In
 
-    nav.TopHeader__Menu
-      ul
-        li Features
-        li Pricing
-        li Docs
-    p test
-
-
-  //- p.
-  //-   abcdefg
-  //-   日本語
-
-//- script setInterval(function (){window.location.reload()}, 2000);
+    div.TopHeader__Box__Menu
+      nav
+        ul
+          li
+            a Features
+          li
+            a Pricing
+          li
+            a Docs
+          li
+            a Support

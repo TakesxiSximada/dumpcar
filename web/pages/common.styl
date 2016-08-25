@@ -28,7 +28,7 @@ body
   position fixed
   top 0
   width 96%
-  height 6rem
+  height 70px
 
 .TopHeader__Box
   border 1px solid #ddd
@@ -37,7 +37,11 @@ body
   border-right 0
   border-width 2px
 
-.TopHeader__Logo
+  display flex
+  justify-content center
+  align-items center
+
+// .TopHeader__Logo
 
 
 .Navigator
@@ -61,7 +65,79 @@ body
     margin auto
 
 
+// .TopHeader__Account
+//   font-size 1rem
+//   float right
 
-.TopHeader__Account
-  font-size 1rem
-  float right
+.TopHeader__Box__Account
+  position absolute
+  right 0
+
+.TopHeader__Box__Banner
+  position absolute
+  left 0
+
+  display flex
+  justify-content center
+  align-items center
+
+.TopHeader__Box__Banner__Img
+  height 50px
+  margin-right 1rem
+
+.TopHeader__Box__Menu
+  nav
+    ul
+      li
+        font-size 14px
+        font-weight 800
+        letter-spacing .5px
+        margin-left 2rem
+        margin-right 2rem
+        display inline-block
+
+
+SignIn__Button__Color_Primary = #c9001a
+SignIn__Button__Color_Secondary = #fff
+
+.SignIn__Button
+  display inline-block
+  font-weight bold
+  text-decoration: none
+  color SignIn__Button__Color_Primary
+  border 2.5px solid SignIn__Button__Color_Primary
+  border-radius 8px
+  text-align center
+  padding .4rem
+  width 8rem
+
+  &:hover
+    color SignIn__Button__Color_Secondary
+    background-color SignIn__Button__Color_Primary
+
+
+
+
+// SignIn__Button__Color = #c9001a
+// SignIn__Button__ColorSub = #fff
+//
+// .SignIn__Button
+//   color SignIn__Button__Color
+//   font-color SignIn__Button__Color
+//   border 2.5px solid SignIn__Button__Color
+//   border-radius 8px
+//   text-align center
+//   padding .4rem
+//   width 5rem
+//   text-decoration: none
+
+//   &:hover
+//     color: SignIn__Button__ColorSub
+//     background-color SignIn__Button__Color
+
+  // display inline-block
+  // text-align center
+  // background-color #97d545
+  // border-radius 24px
+  // width 240px
+  // height 50px
